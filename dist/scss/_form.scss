@@ -1,0 +1,74 @@
+.form {
+  &-group {
+    margin: 1.2rem 0;
+  }
+  &-text {
+    display: block;
+    margin-top: 0.3rem;
+    color: #888;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+  }
+  //set background and text color
+  $spaceamount: (1, 2, 3, 4, 5);
+  @each $space in $spaceamount {
+    //All around margin
+
+    .m-#{$space} {
+      margin: #{$space}rem;
+    }
+
+    // vertical margin
+
+    .my-#{$space} {
+      margin: #{$space}rem 0;
+    }
+    // all around padding
+
+    .p-#{$space} {
+      padding: #{$space}rem;
+    }
+
+    // vertical padding
+
+    .py-#{$space} {
+      padding: #{$space}rem 0;
+    }
+  }
+  input[type="submit"] {
+    font: inherit;
+  }
+  .social-input {
+    display: flex;
+    i {
+      padding: 0.5rem;
+      width: 4rem;
+
+      &.fa-twitter {
+        color: #38a1f3;
+      }
+      &.fa-youtube {
+        color: #c4302b;
+      }
+      &.fa-facebook {
+        color: #3b5998;
+      }
+      &.fa-instagram {
+        color: #c20846;
+      }
+      &.fa-linkedin {
+        color: #0079b5;
+      }
+    }
+  }
+}

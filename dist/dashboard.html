@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Welcome to Dev Connector</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"><i class="fa fa-code">Dev Connector</i></a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html"
+            ><i class="fa fa-user"></i
+            ><span class="hide-sm"> Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a href="login.html"
+            ><i class="fa fa-sign-out"></i
+            ><span class="hide-sm">Logout</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1 class="large text-primary">Dashboard</h1>
+      <p class="lead"><i class="fa fa-user"></i>Welcome Sal!</p>
+      <div class="dash-buttons">
+        <a href="create-profile.html" class="btn">
+          <i class="fa fa-user-circle text-primary">Edit Profile</i>
+        </a>
+        <a href="add-experience.html" class="btn">
+          <i class="fa fa-black-tie text-primary">Add Experience</i>
+        </a>
+        <a href="add-education.html" class="btn">
+          <i class="fa fa-graduation-cap text-primary">Add Education</i>
+        </a>
+      </div>
+      <h2 class="my-2">Experience Credentials</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Comapny</th>
+            <th class="hide-sm">Title</th>
+            <th class="hide-sm">Years</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Microsoft</td>
+            <td class="hide-sm">Senior Developer</td>
+            <td class="hide-sm">12 Oct-2018 14 Jan-2020</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Sun MicroSystem</td>
+            <td class="hide-sm">Senior Developer</td>
+            <td class="hide-sm">12 Oct-2014 14 Jan-2019</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="my-2">Education Details</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>College</th>
+            <th class="hide-sm">Degree</th>
+            <th class="hide-sm">Years</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IIIT Surat</td>
+            <td class="hide-sm">B.Tech,ComputerScience</td>
+            <td class="hide-sm">12 July-2018 14 July-2022</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="my-2">
+        <button class="btn btn-danger">
+          <i class="fa fa-user"></i>&nbsp;Delete my account
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
